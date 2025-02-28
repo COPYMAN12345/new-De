@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AES Decryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AES Decryption</h1>
+        <label for="encryptedMessage">Encrypted Message:</label>
+        <textarea id="encryptedMessage" placeholder="Enter the encrypted message"></textarea>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <button id="decryptBtn">Decrypt</button>
+        <div class="output">
+            <label for="decryptedMessage">Decrypted Message:</label>
+            <textarea id="decryptedMessage" readonly></textarea>
+        </div>
+        <div id="qr-scanner">
+            <video id="qr-video" width="300" height="200"></video>
+            <button id="scan-btn">Scan QR Code</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.min.js"></script>
+    <script src="decrypt.js"></script>
+</body>
+</html>
